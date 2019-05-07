@@ -1,1 +1,1 @@
-web: gunicorn project.wsgi:application --log-file - --log-level debug
+web: gunicorn app:server --timeout 300 --log-file - --log-level debug
